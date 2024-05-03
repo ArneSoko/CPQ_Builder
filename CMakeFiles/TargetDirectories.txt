@@ -1,0 +1,3 @@
+/home/arne/Documents/Code_projects/C/CPQ/CMakeFiles/rebuild_cache.dir
+/home/arne/Documents/Code_projects/C/CPQ/CMakeFiles/edit_cache.dir
+/home/arne/Documents/Code_projects/C/CPQ/CMakeFiles/MyProject.dir

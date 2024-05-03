@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/arne/Documents/Code_projects/C/CPQ/CPQ_base.cpp
+CPQ_base.h
+/home/arne/Documents/Code_projects/C/CPQ/CPQ_base.h
+sstream
+-
+
+/home/arne/Documents/Code_projects/C/CPQ/CPQ_base.h
+iostream
+-
+string
+-
+vector
+-
+map
+-
+
