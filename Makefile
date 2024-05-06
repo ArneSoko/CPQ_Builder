@@ -123,32 +123,86 @@ MyProject/fast:
 	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
 .PHONY : MyProject/fast
 
-CPQ_base.o: CPQ_base.cpp.o
+Cart.o: Cart.cpp.o
 
-.PHONY : CPQ_base.o
+.PHONY : Cart.o
 
 # target to build an object file
-CPQ_base.cpp.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/CPQ_base.cpp.o
-.PHONY : CPQ_base.cpp.o
+Cart.cpp.o:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/Cart.cpp.o
+.PHONY : Cart.cpp.o
 
-CPQ_base.i: CPQ_base.cpp.i
+Cart.i: Cart.cpp.i
 
-.PHONY : CPQ_base.i
+.PHONY : Cart.i
 
 # target to preprocess a source file
-CPQ_base.cpp.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/CPQ_base.cpp.i
-.PHONY : CPQ_base.cpp.i
+Cart.cpp.i:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/Cart.cpp.i
+.PHONY : Cart.cpp.i
 
-CPQ_base.s: CPQ_base.cpp.s
+Cart.s: Cart.cpp.s
 
-.PHONY : CPQ_base.s
+.PHONY : Cart.s
 
 # target to generate assembly for a file
-CPQ_base.cpp.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/CPQ_base.cpp.s
-.PHONY : CPQ_base.cpp.s
+Cart.cpp.s:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/Cart.cpp.s
+.PHONY : Cart.cpp.s
+
+CartItem.o: CartItem.cpp.o
+
+.PHONY : CartItem.o
+
+# target to build an object file
+CartItem.cpp.o:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/CartItem.cpp.o
+.PHONY : CartItem.cpp.o
+
+CartItem.i: CartItem.cpp.i
+
+.PHONY : CartItem.i
+
+# target to preprocess a source file
+CartItem.cpp.i:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/CartItem.cpp.i
+.PHONY : CartItem.cpp.i
+
+CartItem.s: CartItem.cpp.s
+
+.PHONY : CartItem.s
+
+# target to generate assembly for a file
+CartItem.cpp.s:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/CartItem.cpp.s
+.PHONY : CartItem.cpp.s
+
+Item.o: Item.cpp.o
+
+.PHONY : Item.o
+
+# target to build an object file
+Item.cpp.o:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/Item.cpp.o
+.PHONY : Item.cpp.o
+
+Item.i: Item.cpp.i
+
+.PHONY : Item.i
+
+# target to preprocess a source file
+Item.cpp.i:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/Item.cpp.i
+.PHONY : Item.cpp.i
+
+Item.s: Item.cpp.s
+
+.PHONY : Item.s
+
+# target to generate assembly for a file
+Item.cpp.s:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/Item.cpp.s
+.PHONY : Item.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MyProject"
-	@echo "... CPQ_base.o"
-	@echo "... CPQ_base.i"
-	@echo "... CPQ_base.s"
+	@echo "... Cart.o"
+	@echo "... Cart.i"
+	@echo "... Cart.s"
+	@echo "... CartItem.o"
+	@echo "... CartItem.i"
+	@echo "... CartItem.s"
+	@echo "... Item.o"
+	@echo "... Item.i"
+	@echo "... Item.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

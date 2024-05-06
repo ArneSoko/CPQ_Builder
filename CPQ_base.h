@@ -7,7 +7,8 @@ using namespace std;
 
 class Item{
 public:
-	Item(string setName, float setPrice);
+    Item();
+    Item(string setName, float setPrice);
     bool operator==(const Item &i);
     string name;
     vector<Item*> attr;
@@ -22,7 +23,8 @@ private:
 
 class CartItem{
 public:
-    CartItem(const Item& itemAdd, int quantityAdd);
+    CartItem();
+    CartItem(const Item &itemAdd, int quantityAdd);
     bool operator==(const CartItem &c);
 	string printCartItem();
     Item item;

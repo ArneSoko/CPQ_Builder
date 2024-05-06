@@ -70,32 +70,62 @@ CMakeFiles/MyProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arne/Documents/Code_projects/C/CPQ/main.cpp -o CMakeFiles/MyProject.dir/main.cpp.s
 
-CMakeFiles/MyProject.dir/CPQ_base.cpp.o: CMakeFiles/MyProject.dir/flags.make
-CMakeFiles/MyProject.dir/CPQ_base.cpp.o: CPQ_base.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arne/Documents/Code_projects/C/CPQ/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/CPQ_base.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/CPQ_base.cpp.o -c /home/arne/Documents/Code_projects/C/CPQ/CPQ_base.cpp
+CMakeFiles/MyProject.dir/Cart.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/Cart.cpp.o: Cart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arne/Documents/Code_projects/C/CPQ/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/Cart.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/Cart.cpp.o -c /home/arne/Documents/Code_projects/C/CPQ/Cart.cpp
 
-CMakeFiles/MyProject.dir/CPQ_base.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/CPQ_base.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arne/Documents/Code_projects/C/CPQ/CPQ_base.cpp > CMakeFiles/MyProject.dir/CPQ_base.cpp.i
+CMakeFiles/MyProject.dir/Cart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/Cart.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arne/Documents/Code_projects/C/CPQ/Cart.cpp > CMakeFiles/MyProject.dir/Cart.cpp.i
 
-CMakeFiles/MyProject.dir/CPQ_base.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/CPQ_base.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arne/Documents/Code_projects/C/CPQ/CPQ_base.cpp -o CMakeFiles/MyProject.dir/CPQ_base.cpp.s
+CMakeFiles/MyProject.dir/Cart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/Cart.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arne/Documents/Code_projects/C/CPQ/Cart.cpp -o CMakeFiles/MyProject.dir/Cart.cpp.s
+
+CMakeFiles/MyProject.dir/CartItem.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/CartItem.cpp.o: CartItem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arne/Documents/Code_projects/C/CPQ/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyProject.dir/CartItem.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/CartItem.cpp.o -c /home/arne/Documents/Code_projects/C/CPQ/CartItem.cpp
+
+CMakeFiles/MyProject.dir/CartItem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/CartItem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arne/Documents/Code_projects/C/CPQ/CartItem.cpp > CMakeFiles/MyProject.dir/CartItem.cpp.i
+
+CMakeFiles/MyProject.dir/CartItem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/CartItem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arne/Documents/Code_projects/C/CPQ/CartItem.cpp -o CMakeFiles/MyProject.dir/CartItem.cpp.s
+
+CMakeFiles/MyProject.dir/Item.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/Item.cpp.o: Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arne/Documents/Code_projects/C/CPQ/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyProject.dir/Item.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyProject.dir/Item.cpp.o -c /home/arne/Documents/Code_projects/C/CPQ/Item.cpp
+
+CMakeFiles/MyProject.dir/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/Item.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arne/Documents/Code_projects/C/CPQ/Item.cpp > CMakeFiles/MyProject.dir/Item.cpp.i
+
+CMakeFiles/MyProject.dir/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/Item.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arne/Documents/Code_projects/C/CPQ/Item.cpp -o CMakeFiles/MyProject.dir/Item.cpp.s
 
 # Object files for target MyProject
 MyProject_OBJECTS = \
 "CMakeFiles/MyProject.dir/main.cpp.o" \
-"CMakeFiles/MyProject.dir/CPQ_base.cpp.o"
+"CMakeFiles/MyProject.dir/Cart.cpp.o" \
+"CMakeFiles/MyProject.dir/CartItem.cpp.o" \
+"CMakeFiles/MyProject.dir/Item.cpp.o"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
 
 MyProject: CMakeFiles/MyProject.dir/main.cpp.o
-MyProject: CMakeFiles/MyProject.dir/CPQ_base.cpp.o
+MyProject: CMakeFiles/MyProject.dir/Cart.cpp.o
+MyProject: CMakeFiles/MyProject.dir/CartItem.cpp.o
+MyProject: CMakeFiles/MyProject.dir/Item.cpp.o
 MyProject: CMakeFiles/MyProject.dir/build.make
 MyProject: CMakeFiles/MyProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arne/Documents/Code_projects/C/CPQ/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MyProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arne/Documents/Code_projects/C/CPQ/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MyProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
