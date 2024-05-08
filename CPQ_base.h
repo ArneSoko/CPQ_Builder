@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <fstream>
 
 using namespace std;
 
@@ -11,11 +12,13 @@ public:
     Item(string setName, float setPrice);
     bool operator==(const Item &i);
     string name;
-    vector<Item*> attr;
+    vector<Item> attr;
 	float getPrice();
 	void setPrice(float newPrice);
-	vector<Item*> getAttr();
-	void setAttr(Item* attrib);
+	vector<Item> getAttr();
+	void setAttr(Item attrib);
+    int write();
+    string writeItem();
 private:
 	float price;
 };
@@ -31,9 +34,11 @@ public:
     float getPrice();
 	int getQuantity();
 	void setQuantity(int q);
+    string write();
 private:
     int quantity;
 };
+
 
 class Cart{
 public:
@@ -44,4 +49,7 @@ public:
     float getTotal();
     int numItems();
     Item removeItem(CartItem item);
+    void write(string cartName);
 };
+
+void read(string fileName);

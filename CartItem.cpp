@@ -36,3 +36,10 @@ int CartItem::getQuantity()
 void CartItem::setQuantity(int q){
 	quantity = q;
 }
+
+string CartItem::write()
+{
+    std::ostringstream s;
+    s << "{\n\"Item\":\n" << item.writeItem() << ",\n\"Quantity\":" << quantity << "\n}";
+    return s.str();
+}

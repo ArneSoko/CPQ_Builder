@@ -1,5 +1,7 @@
 #include "CPQ_base.h"
 #include <sstream>
+#include <ctime>
+#include <iomanip>
 
 using namespace std;
 
@@ -43,11 +45,43 @@ Item Cart::removeItem(CartItem item){
 	for(i; !(i->item.name == item.item.name) && (i!=cart.end()); ++i){
 		continue;
 	}
-	std::cout << "\n";
 	if ((i==cart.end()) && !(i->item.name == item.item.name)){
 		return Item();
 	}
 	Item iItem = i->item;
 	cart.erase(i);
 	return iItem;
+}
+
+void Cart::write(string cartName){
+	std::ostringstream fileName;
+	if(cartName == ""){
+		time_t t = time(nullptr);
+		struct tm* timeStruct = localtime(&t);
+		fileName << put_time(timeStruct, "%d_%m_%Y_%H:%M") << ".json";
+	}
+	else{
+		fileName << cartName << ".json";
+	}
+	std::cout << fileName.str();
+	std::ostringstream s;
+	s << "[\n";
+	auto i = cart.begin();
+	while(i!=cart.end()){
+		s << i->write();
+		if(++i != cart.end()){
+			s << ",\n";
+		}
+		else{
+			s << "\n]\n";
+		}
+	}
+	std::cout << s.str();
+	std::ofstream file { fileName.str() };
+	if(!file){
+        std::cerr << "Failed to open file\n";
+        return;
+    }
+	file << s.str();
+	file.close();
 }
