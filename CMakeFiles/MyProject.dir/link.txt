@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/MyProject.dir/main.cpp.o CMakeFiles/MyProject.dir/Cart.cpp.o CMakeFiles/MyProject.dir/CartItem.cpp.o CMakeFiles/MyProject.dir/Item.cpp.o  -o MyProject 
+/usr/bin/c++    -rdynamic CMakeFiles/MyProject.dir/main.cpp.o CMakeFiles/MyProject.dir/Cart.cpp.o CMakeFiles/MyProject.dir/CartItem.cpp.o CMakeFiles/MyProject.dir/Item.cpp.o CMakeFiles/MyProject.dir/Attr.cpp.o  -o MyProject 

@@ -8,7 +8,7 @@ using namespace std;
 string Cart::viewCart(){
 	std::ostringstream s;
 	for(auto i = cart.begin(); (i!=cart.end()); ++i){
-		s << i->printCartItem() << ", " << i->getPrice() << "\n";
+		s << i->write() << ", " << i->getPrice() << "\n";
 	}
 	s << "Total, " << numItems() << ", " << getTotal() << "\n";
 	return s.str();
@@ -27,7 +27,7 @@ CartItem Cart::newItem(Item item, int quant){
 float Cart::getTotal(){
 	float sum = 0.f;
 	for(auto i = cart.begin(); (i!=cart.end()); ++i){
-		sum = sum + (i->getQuantity() * i->item.getPrice());
+		sum = sum + (i->getPrice());
 	}
 	return sum;
 }
@@ -40,15 +40,15 @@ int Cart::numItems(){
 	return sum;
 }
 
-Item Cart::removeItem(CartItem item){
+CartItem Cart::removeItem(CartItem item){
 	auto i = cart.begin();
 	for(i; !(i->item.name == item.item.name) && (i!=cart.end()); ++i){
 		continue;
 	}
 	if ((i==cart.end()) && !(i->item.name == item.item.name)){
-		return Item();
+		return CartItem();
 	}
-	Item iItem = i->item;
+	CartItem iItem = *i;
 	cart.erase(i);
 	return iItem;
 }
@@ -69,13 +69,12 @@ void Cart::write(string cartName){
 	auto i = cart.begin();
 	while(i!=cart.end()){
 		s << i->write();
+		//Json readability
 		if(++i != cart.end()){
 			s << ",\n";
 		}
-		else{
-			s << "\n]\n";
-		}
 	}
+	s << "\n]\n";
 	std::cout << s.str();
 	std::ofstream file { fileName.str() };
 	if(!file){

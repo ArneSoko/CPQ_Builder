@@ -13,13 +13,14 @@ int main(int argc, char **argv){
             *c = ci;
         }
     }
-    std::cout << c->item.name << "\n";
-    std::cout << cart.viewCart();
-    Item removed = cart.removeItem(*c);
-    cart.write("testCart");
-    //Item i = Item("test", 3.f); 
-    //removed.setAttr(i);
-    //std::cout << removed.getAttr().at(0).name << endl;
-    removed.write();
+    //std::cout << cart.viewCart();
+    CartItem removed = cart.removeItem(*c);
+    //cart.write("testCart");
+    Attr i = Attr("test", 3.52f);
+    std::cout << i.writeAttr() << endl;
+    removed.item.setAttr(i);
+    std::cout << removed.item.writeItem() << endl;
+    //removed.setOption(i);
+    //std::cout << removed.write() << endl;
     return 0;
 }

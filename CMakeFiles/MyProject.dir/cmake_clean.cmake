@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyProject.dir/Attr.cpp.o"
   "CMakeFiles/MyProject.dir/Cart.cpp.o"
   "CMakeFiles/MyProject.dir/CartItem.cpp.o"
   "CMakeFiles/MyProject.dir/Item.cpp.o"

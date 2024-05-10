@@ -123,6 +123,33 @@ MyProject/fast:
 	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
 .PHONY : MyProject/fast
 
+Attr.o: Attr.cpp.o
+
+.PHONY : Attr.o
+
+# target to build an object file
+Attr.cpp.o:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/Attr.cpp.o
+.PHONY : Attr.cpp.o
+
+Attr.i: Attr.cpp.i
+
+.PHONY : Attr.i
+
+# target to preprocess a source file
+Attr.cpp.i:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/Attr.cpp.i
+.PHONY : Attr.cpp.i
+
+Attr.s: Attr.cpp.s
+
+.PHONY : Attr.s
+
+# target to generate assembly for a file
+Attr.cpp.s:
+	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/Attr.cpp.s
+.PHONY : Attr.cpp.s
+
 Cart.o: Cart.cpp.o
 
 .PHONY : Cart.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MyProject"
+	@echo "... Attr.o"
+	@echo "... Attr.i"
+	@echo "... Attr.s"
 	@echo "... Cart.o"
 	@echo "... Cart.i"
 	@echo "... Cart.s"
