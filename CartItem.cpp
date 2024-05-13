@@ -30,9 +30,9 @@ vector<Attr> CartItem::getOptions(){
 }
 
 int CartItem::setOption(Attr attrib){
-    auto i = item.getAttr().begin();
-    for(i; !(i==item.getAttr().end()); ++i){
-        if(*i == attrib){
+    int i = 0;
+    for(i; !(i==item.getAttr().size()); ++i){
+        if(item.getAttr().at(i) == attrib){
             options.push_back(attrib);
             return 0;
         }
@@ -72,14 +72,14 @@ string CartItem::write()
 {
     std::ostringstream s;
     s << "{\n\"Item\":" << item.writeItem() << ",\n\"Options\":[";
-    /* auto i = options.begin();
-    while(!(i==options.end())){
-        s << "{" << i->writeAttr() << "}"; 
+    int i = 0;
+    while(!(i==options.size())){
+        s << options.at(i).writeAttr(); 
         //Json formatting
-        if(++i!=options.end()){
+        if(++i!=options.size()){
             s << ",\n";
         }
-    } */
-    s <<"],\n\"Total\":" << getPrice() << ",\n\"Quantity\":" << quantity << "\n}";
+    }
+    s << "],\n\"Quantity\":" << quantity << ",\n\"Total\":" << getPrice() << "\n}";
     return s.str();
 }

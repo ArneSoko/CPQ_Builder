@@ -48,12 +48,12 @@ vector<Attr> Item::getAttr(){
 
 string Item::writeItem(){
     std::ostringstream s;
-	s << "{\"Name\": " << name << ",\n\"Options\":[";
-    auto i = getAttr().begin();
-    while(!(i == getAttr().end())){
-        std::cout << i->writeAttr() << endl;
+	s << "{\"Name\": " << name << ",\n\"Configs\":[\n";
+    int i = 0;
+    while(!(i == getAttr().size())){
+        s << getAttr().at(i).writeAttr();
         //This is just for json formatting
-        if(!(++i == getAttr().end())){s << ",\n";}
+        if(!(++i == getAttr().size())){s << ",\n";}
     }
     s << "],\n\"Price\": " << price << "}";
     return s.str();

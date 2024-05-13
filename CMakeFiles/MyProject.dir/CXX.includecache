@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/arne/Documents/Code_projects/C/CPQ/Attr.cpp
-CPQ_base.h
-/home/arne/Documents/Code_projects/C/CPQ/CPQ_base.h
-sstream
--
-
 /home/arne/Documents/Code_projects/C/CPQ/CPQ_base.h
 iostream
 -
@@ -22,28 +16,6 @@ vector
 map
 -
 fstream
--
-
-/home/arne/Documents/Code_projects/C/CPQ/Cart.cpp
-CPQ_base.h
-/home/arne/Documents/Code_projects/C/CPQ/CPQ_base.h
-sstream
--
-ctime
--
-iomanip
--
-
-/home/arne/Documents/Code_projects/C/CPQ/CartItem.cpp
-CPQ_base.h
-/home/arne/Documents/Code_projects/C/CPQ/CPQ_base.h
-sstream
--
-
-/home/arne/Documents/Code_projects/C/CPQ/Item.cpp
-CPQ_base.h
-/home/arne/Documents/Code_projects/C/CPQ/CPQ_base.h
-sstream
 -
 
 /home/arne/Documents/Code_projects/C/CPQ/main.cpp
