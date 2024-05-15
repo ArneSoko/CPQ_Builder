@@ -71,15 +71,15 @@ void CartItem::setQuantity(int q){
 string CartItem::write()
 {
     std::ostringstream s;
-    s << "{\n\"Item\":" << item.writeItem() << ",\n\"Options\":[";
+    s << "{\"Item\":" << item.writeItem() << ",\"Options\":[";
     int i = 0;
     while(!(i==options.size())){
         s << options.at(i).writeAttr(); 
         //Json formatting
         if(++i!=options.size()){
-            s << ",\n";
+            s << ",";
         }
     }
-    s << "],\n\"Quantity\":" << quantity << ",\n\"Total\":" << getPrice() << "\n}";
+    s << "],\"Quantity\":" << quantity << ",\"Total\":" << getPrice() << "}";
     return s.str();
 }

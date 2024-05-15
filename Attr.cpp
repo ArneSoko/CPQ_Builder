@@ -27,6 +27,6 @@ float Attr::getPrice(){
 
 string Attr::writeAttr(){
     std::ostringstream s;
-	s << "{\"Name\": " << name << ",\n\"Price\": " << price << "}";
+	s << "{\"Name\": \"" << name << "\",\"Cost\": " << price << "}";
     return s.str();
 }

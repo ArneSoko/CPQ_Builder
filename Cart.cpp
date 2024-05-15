@@ -55,15 +55,16 @@ CartItem Cart::removeItem(CartItem item){
 
 void Cart::write(string cartName){
 	std::ostringstream fileName;
+	//Default name
 	if(cartName == ""){
 		time_t t = time(nullptr);
 		struct tm* timeStruct = localtime(&t);
-		fileName << put_time(timeStruct, "%d_%m_%Y_%H:%M") << ".json";
+		fileName << put_time(timeStruct, "%d_%m_%Y_%H:%M");
 	}
 	else{
-		fileName << cartName << ".json";
+		fileName << cartName;
 	}
-	std::cout << fileName.str();
+	fileName << ".json";
 	std::ostringstream s;
 	s << "[\n";
 	auto i = cart.begin();
@@ -74,7 +75,7 @@ void Cart::write(string cartName){
 			s << ",\n";
 		}
 	}
-	s << "\n]\n";
+	s << "\n]";
 	std::cout << s.str();
 	std::ofstream file { fileName.str() };
 	if(!file){
